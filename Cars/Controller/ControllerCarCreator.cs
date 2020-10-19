@@ -20,6 +20,7 @@ namespace Cars
             Console.WriteLine();
 
             CarModel car;
+
             if (0 == (int)type)
             {
                 car = new CarModel((CarManufacturer)manufacturer, (CarName)name, (CarColor)color, constructionYear);
@@ -28,11 +29,6 @@ namespace Cars
             {
                 car = new SuperCarModel((CarManufacturer)manufacturer, (CarName)name, (CarColor)color, constructionYear);
             }
-            /*
-            CarModel car = type.Equals(CarType.Auto) ?
-                new CarModel((CarManufacturer)manufacturer, (CarName)name, (CarColor)color, constructionYear) :
-                new SuperCarModel((CarManufacturer)manufacturer, (CarName)name, (CarColor)color, constructionYear);
-            */
 
             cars.Add(car);
             return cars;

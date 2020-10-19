@@ -27,7 +27,14 @@ namespace Cars
             string carDescription = "Autotyp: " + this.carType + "\nHersteller: " + this.carManufacturer + "\nName: "
                 + this.carName + "\nFarbe: " + this.carColor + "\nBaujahr: " + this.CarConstructionYear;
 
+            carDescription += MessageCarType();
+
             return carDescription;
+        }
+
+        protected string MessageCarType()
+        {
+            return "\nICH FAHRE EIN " + this.carType + "\n\n";
         }
     }
 }

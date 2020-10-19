@@ -15,7 +15,7 @@ namespace Cars
 
         public override string ToString()
         {
-            string carDescription = base.ToString() + "\nICH FAHRE EIN " + base.carType + "\n\n";
+            string carDescription = base.ToString() + base.MessageCarType();
 
             return carDescription;
         }
