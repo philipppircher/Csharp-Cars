@@ -43,7 +43,7 @@ namespace Cars
             Console.WriteLine(output);
             Console.Write("Deine Eingabe: ");
 
-            userInput = Int32.Parse(Console.ReadLine());
+            userInput = ControllerMenu.GetStringToInt();
             userInput = GetAbove0OrBelowLengthOfEnum(userInput, @enum);
             Console.WriteLine("Du hast " + userInput + " gewählt\n");
             return userInput;
@@ -57,7 +57,7 @@ namespace Cars
             Console.WriteLine(output);
             Console.Write("Deine Eingabe: ");
 
-            userInput = Int32.Parse(Console.ReadLine());
+            userInput = ControllerMenu.GetStringToInt();
 
             return userInput;
         }
