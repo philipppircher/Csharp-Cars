@@ -116,39 +116,5 @@ namespace Cars
 
             return value;
         }
-
-        /*
-        private static int GetCarTypeToInt()
-        {
-            int typeValue = 0;
-            bool isSet = false;
-
-            do
-            {
-                Console.WriteLine("Typ Auswahl: 0 oder kleiner.) Auto,\n1 oder größer.) Sportauto: ");
-                Console.Write("Deine Eingabe: ");
-
-                typeValue = ControllerMenu.GetStringToInt();
-
-                if (typeValue < 0)
-                {
-                    typeValue = 0;
-
-                }
-                else if (typeValue > 1)
-                {
-                    typeValue = 1;
-                }
-
-                if (typeValue == 0 || typeValue == 1)
-                {
-                    isSet = true;
-                }
-
-            } while (!isSet);
-
-            return typeValue;
-        }
-        */
     }
 }
